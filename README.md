@@ -86,3 +86,12 @@ directory (it can be different according to your NSA model or kernel version -
 try to find "pwm1_enable" file in the /sys/class directory).
 
 Patches for other NSA models or kernel versions appreciated.
+
+Discussion
+----------
+
+Discussion here: http://forum.nas-central.org/viewtopic.php?f=249&t=7405
+
+You can use github issues to send bug reports, but please note I only have NSA
+310 and I am not able to test with other models (feel free to send pull
+requests tho).
