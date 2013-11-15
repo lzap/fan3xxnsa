@@ -30,29 +30,29 @@ can put a pressure on the fan and create even more noise.
 
 This is how it sets pwm according to temperature:
 
-	Temp:<41 Pwm: 0
-	Temp: 42 Pwm: 0
-	Temp: 43 Pwm: 160
-	Temp: 44 Pwm: 165
-	Temp: 45 Pwm: 170
-	Temp: 46 Pwm: 175
-	Temp: 47 Pwm: 180
-	Temp: 48 Pwm: 185
-	Temp: 49 Pwm: 190
-	Temp: 50 Pwm: 195
-	Temp: 51 Pwm: 200
-	Temp: 52 Pwm: 205
-	Temp: 53 Pwm: 210
-	Temp: 54 Pwm: 215
-	Temp: 55 Pwm: 220
-	Temp: 56 Pwm: 225
-	Temp: 57 Pwm: 230
-	Temp: 58 Pwm: 235
-	Temp: 59 Pwm: 240
-	Temp: 60 Pwm: 245
-	Temp: 61 Pwm: 250
-	Temp: 62 Pwm: 255
-	Temp:>63 Pwm: 255
+    Temp:<41 Pwm: 0
+    Temp: 42 Pwm: 0
+    Temp: 43 Pwm: 160
+    Temp: 44 Pwm: 165
+    Temp: 45 Pwm: 170
+    Temp: 46 Pwm: 175
+    Temp: 47 Pwm: 180
+    Temp: 48 Pwm: 185
+    Temp: 49 Pwm: 190
+    Temp: 50 Pwm: 195
+    Temp: 51 Pwm: 200
+    Temp: 52 Pwm: 205
+    Temp: 53 Pwm: 210
+    Temp: 54 Pwm: 215
+    Temp: 55 Pwm: 220
+    Temp: 56 Pwm: 225
+    Temp: 57 Pwm: 230
+    Temp: 58 Pwm: 235
+    Temp: 59 Pwm: 240
+    Temp: 60 Pwm: 245
+    Temp: 61 Pwm: 250
+    Temp: 62 Pwm: 255
+    Temp:>63 Pwm: 255
 
 How to install
 --------------
@@ -64,7 +64,7 @@ pick 1.0.2 version or higher in order to have ARM support.
 To install fan3xxnsa on Debian, just do:
 
     apt-get install git golang
-	git clone https://github.com/lzap/fan3xxnsa.git
+    git clone https://github.com/lzap/fan3xxnsa.git
     cd fan3xxnsa
     ./install.sh
 
@@ -73,11 +73,11 @@ directory.
 
 Before you start the daemon, **you need to enable fan control** with:
 
-	echo 1 > /sys/class/i2c-dev/i2c-0/device/0-002e/pwm1_enable
+    echo 1 > /sys/class/i2c-dev/i2c-0/device/0-002e/pwm1_enable
 
 Then you can start it on background using nohup for example:
 
-	nohup /root/bin/fan3xxnsa 1>/dev/null 2>&1 &
+    nohup /root/bin/fan3xxnsa 1>/dev/null 2>&1 &
 
 Must be executed as root, or you can change permissions on the pwm1 file.
 
