@@ -16,7 +16,7 @@ const (
 	// path to the sys i2c interface (can be different on various kernel versions)
 	IDIR = "/sys/class/i2c-dev/i2c-0/device/0-002e"
 
-	// temperatures and pwm values (at idle 42 board 48 cpu when case is opened)
+	// marginal temperatures and pwm values (at idle 42 board 48 cpu when case is opened)
 	LOWTEMP  = 42
 	HIGHTEMP = 62
 	PWMMIN   = 155
